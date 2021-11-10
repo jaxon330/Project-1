@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    background-color: #011F3F;
+    text-align: center;
+}
+
+.btn {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    border: 15px solid black;
+    margin: 30px;
+}
+
+.restart {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    color: burlywood;
+}
+
+/* background colors for buttons */
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#blue {
+    background-color: blue;
+}
+
+/* when button pressed */
+
+.pressed:active {
+    transform: scale(0.98);
+box-shadow: 0 0 20px white;
+background-color: grey;
+}
+
+
+
+/* media queries */
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+        border: 8px solid black;
+        margin: 15px;
+    }
+
+    .restart {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.8em;
+        
+    }
+}
+
+@media screen and (max-width: 380px){
+    h1 {
+        font-size: 0.7em;
+    }
+
+    .btn {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        border: 6px solid black;
+        margin: 10px;
+    }
+
+    .restart {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.5em;
+        
+    }
+}
