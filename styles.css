@@ -7,16 +7,25 @@ body {
 }
 
 .btn {
-    width: 300px;
-    height: 300px;
-    border-radius: 50px;
-    border: 15px solid black;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
     margin: 30px;
 }
 
+/* hide restart button */
 .restart {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
+    display: none;
+    
+}
+
+/* show restart button*/
+.show {
+    display: inline-block;
     
 }
 
@@ -52,7 +61,10 @@ box-shadow: 0 0 20px white;
 background-color: grey;
 }
 
-
+/* background red */
+.red {
+    background-color: rgb(194, 9, 9);
+}
 
 /* media queries */
 @media screen and (max-width: 600px){
