@@ -61,7 +61,7 @@ box-shadow: 0 0 20px white;
 background-color: grey;
 }
 
-/* background red */
+/*when we click wrong button  background becomes red */
 .red {
     background-color: rgb(194, 9, 9);
 }

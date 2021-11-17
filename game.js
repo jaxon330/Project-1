@@ -4,6 +4,8 @@ let userClickedPattern = []
 let level = 0;
 let started = false;
 
+
+// press any key to start the game
 $(document).keypress(() => {
     if (started === false) {
         // $('.level').text(`Level ${level}`)
@@ -14,57 +16,59 @@ $(document).keypress(() => {
 })
 
 
-
 // User clicked pattern
 
 $('.btn').click((e) => {
     // console.log(e.target.id)
     let userChoosenColor = e.target.id
     userClickedPattern.push(userChoosenColor)
-    console.log(userClickedPattern.length)
+    // console.log(userClickedPattern.length)
     playSound(userChoosenColor)
     //
     checkAnswer(userClickedPattern.length - 1)
-    console.log('user ' + userClickedPattern);
 })
 
 // game condition
 function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-        console.log('success');
-        // console.log('computer '+gamePattern);
-        console.log('user ' + userClickedPattern);
-        // console.log(userClickedPattern.length)
+
         if (gamePattern.length === userClickedPattern.length) {
+            
             setTimeout(function () {
                 nextSequence()
             }, 1000)
             userClickedPattern = []
         }
     } else {
-        wrongSequence()
-        // console.log('computer '+gamePattern);
-        // console.log('user '+userClickedPattern);
+        wrongAnswer()
+
 
     }
 }
 
-
+// Computer clicked pattern
 function nextSequence() {
     level++;
     $('.level').text(`Level ${level}`)
     let randomNumber = Math.floor(Math.random() * 3)
     let randomChoosenColour = buttonColors[randomNumber]
     gamePattern.push(randomChoosenColour)
-    $('#' + randomChoosenColour).fadeOut(100).fadeIn(100);
-    playSound(randomChoosenColour)
-    console.log('computer ' + gamePattern);
+    gamePattern.forEach((randomChoosenColour, i) => {
+        setTimeout(() => {
+            $('#' + randomChoosenColour).fadeOut(100).fadeIn(100);
+            playSound(randomChoosenColour)
+        }, i * 500)
+        
+    })
+
+    // console.log('computer ' + gamePattern);
 
 }
 
 
 
-// how to play a sound in javascript?
+
+// play sound
 
 function playSound(index) {
     var audio = new Audio('sounds/' + index + '.mp3')
@@ -72,7 +76,7 @@ function playSound(index) {
 }
 
 // game over
-function wrongSequence() {
+function wrongAnswer() {
     console.log('wrong');
     let audio = new Audio('sounds/error.wav')
     audio.play()
@@ -81,8 +85,7 @@ function wrongSequence() {
         $('body').removeClass('red')
     }, 300)
     $('.restart').addClass('show')
-    // $('.btn').fadeOut(500)
-    $('.level').text('Game Over, Press Restart button to Restart')
+    $('.level').text('Game Over, Press Restart button')
 }
 
 // restart button
