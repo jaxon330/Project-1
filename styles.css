@@ -70,55 +70,13 @@ background-color: grey;
     background-color: rgb(194, 9, 9);
 }
 
-/* media queries */
-@media screen and (max-width: 600px){
-    h1 {
-        font-size: 1em;
-    }
-
-    .btn {
-        width: 150px;
-        height: 150px;
-        border-radius: 25px;
-        border: 8px solid black;
-        margin: 15px;
-    }
-
-    .restart {
-        font-family: 'Press Start 2P', cursive;
-        font-size: 0.8em;
-        
-    }
-}
-
-@media screen and (max-width: 380px){
-    h1 {
-        font-size: 0.7em;
-    }
-
-    .btn {
-        width: 100px;
-        height: 100px;
-        border-radius: 20px;
-        border: 6px solid black;
-        margin: 10px;
-    }
-
-    .restart {
-        font-family: 'Press Start 2P', cursive;
-        font-size: 0.5em;
-        
-    }
-}
-
-
 /* Click here to learn about the game */
 h2 {
     font-family: 'Press Start 2P', cursive;
     font-size: 2em;
     color: burlywood;
+    line-height: 50px;
 }
-
 
 /* pop-up window  */
 
@@ -178,3 +136,141 @@ p {
 	cursor: pointer;
 }
 
+
+/* media queries */
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+    .btn {
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+        border: 8px solid black;
+        margin: 15px;
+    }
+
+    .restart {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.8em;
+        margin: 20px;
+    }
+
+    #modal-textbox {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #DBD0C0;
+        height: 300px;
+        width: 370px;
+        border-radius: 2px;
+        margin: 100px auto;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        padding: 2%;
+        line-height: 120%;
+    }
+    
+    #modal-footer {
+        text-align: center;
+    }
+    
+    
+    h3 {
+        padding-bottom: 15px;
+        font-size: 1em;
+    }
+    
+    p {
+        font-size: 0.7em;
+        line-height: 15px;
+    }
+    
+    .modal-buttons {
+        color: white;
+        cursor: pointer;
+    }
+    
+    /* Close button for pop-up window */
+    #close {
+        font-size: 1em;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        color: white;
+        background-color: #011F3F;
+        cursor: pointer;
+    }
+    
+}
+
+@media screen and (max-width: 380px){
+    h1 {
+        font-size: 0.7em;
+    }
+
+    h2 {
+        font-size: 0.7em;
+        line-height: 15px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        border: 6px solid black;
+        margin: 10px;
+    }
+
+    .restart {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.5em;
+        margin: 15px;
+    }
+
+    #modal-textbox {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #DBD0C0;
+        height: 380px;
+        width: 250px;
+        border-radius: 2px;
+        margin: 100px auto;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        padding: 2%;
+        line-height: 120%;
+    }
+    
+    #modal-footer {
+        text-align: center;
+    }
+    
+    
+    h3 {
+        padding-bottom: 15px;
+        font-size: 1em;
+    }
+    
+    p {
+        font-size: 0.7em;
+        line-height: 15px;
+    }
+    
+    .modal-buttons {
+        color: white;
+        cursor: pointer;
+    }
+    
+    /* Close button for pop-up window */
+    #close {
+        font-size: 1em;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        color: white;
+        background-color: #011F3F;
+        cursor: pointer;
+    }
+}

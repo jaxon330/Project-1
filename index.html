@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
+
     <title>Simon Game</title>
 </head>
+
 <body>
     <h1 class="title level">Press any key to start</h1>
     <div class="container">
@@ -25,33 +27,38 @@
         <button class="restart pressed">Restart</button>
     </div>
 
-   
+
     <!-- Click here to learn about the game -->
     <h2>Click <span id="openModal" class="modal-buttons">here</span> to learn about the game</h2>
-    
-     <!-- pop-up window-->
+
+    <!-- pop-up window-->
     <div id="modal">
-      <div id="modal-textbox">
-      
-      <h3>Learn to play Simon game</h3>
+        <div id="modal-textbox">
 
-      <p>Simon game is a game of lights and sounds in which player must repeat random sequences of lights by pressing the colored pads in correct order</p>
-      <p>Press any key to start the game. Simon will give the first signal. Repeat the signal by clicking the same color lens.
-          Simon will dublicate color as you advance to next level. Repeat the colors.
-          Continue playing as long as you can repeat each sequence of sig- nals correctly.
-          
-      </p>
-      <p>If you fail to repeat a sequence exactly, Simon responds with a 'BAZZ' sound. This means you've lost. Game Over!</p>      
+            <h3>Learn to play Simon game</h3>
 
-      <div id="modal-footer">
-        <button id="close" class="modal-buttons">Close</button>
-      </div>
-      
-      </div>
+            <p>Simon game is a game of lights and sounds in which player must repeat random sequences of lights by
+                pressing the colored pads in correct order</p>
+            <p>Press any key to start the game. Simon will give the first signal. Repeat the signal by clicking the same
+                color lens.
+                Simon will dublicate color as you advance to next level. Repeat the colors.
+                Continue playing as long as you can repeat each sequence of sig- nals correctly.
+
+            </p>
+            <p>If you fail to repeat a sequence exactly, Simon responds with a 'BAZZ' sound. This means you've lost.
+                Game Over!</p>
+
+            <div id="modal-footer">
+                <button id="close" class="modal-buttons">Close</button>
+            </div>
+
+        </div>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="game.js"></script>
 </body>
+
 </html>

@@ -9,7 +9,9 @@ let started = false;
 $(document).keypress(() => {
     if (started === false) {
         // $('.level').text(`Level ${level}`)
-        nextSequence()
+        setTimeout(() => {
+            nextSequence()
+        }, 300)
         started = true;
         $('h2').css('display', 'none')
     }
@@ -96,7 +98,10 @@ $('.restart').click(() => {
     level = 0;
     $('.restart').removeClass('show')
     $('h2').css('display', 'none')
-    nextSequence()
+    setTimeout(() => {
+        nextSequence()
+    }, 300)
+    
 
 })
 
@@ -109,20 +114,17 @@ const openBtn = $('#openModal')
 
 const modal = $('#modal')
 
-const openModalFunction = () => {
-    modal.style.display = 'block'
-}
-
 const close = $('#close')
 
-openBtn.addEventListener('click', openModalFunction)
-
-$('#openModal').on('click', function() {
+function openModalFunction()  {
     $('#modal').css('display', 'block');
-})
+}
 
-const closeModalFunction = () => {
-    modal.style.display = 'none'
+openBtn.click(openModalFunction)
+
+
+function closeModalFunction()  {
+    $('#modal').css('display', 'none');
   }
 
-close.addEventListener('click', closeModalFunction)
+close.click(closeModalFunction)
