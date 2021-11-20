@@ -1,6 +1,6 @@
 <!-- ABOUT THE PROJECT -->
 ## Simon Game
-[![simon game screenshot][simon-game]](https://github.com/jaxon330/Project-1/blob/main/screenshots/press-to-start.jpg
+![press-to-start](https://user-images.githubusercontent.com/86989396/142721784-3a52300f-ef64-4b70-8fdf-6817ae1759bf.jpg)
 
 ## Introduction
 Simon game is a game of lights and sounds in which player must repeat random sequences of lights by pressing the colored pads in correct order.
@@ -33,6 +33,6 @@ I started off my by making the Game board and all of the buttons. Once I had a b
 * Can track the level
 * Notify the players when they fail to repeat a sequence exactly
 
-[![simon game screenshot][simon-game]](https://github.com/jaxon330/Project-1/blob/main/screenshots/press-to-start.jpg
-[![simon game screenshot][simon-game]](https://github.com/jaxon330/Project-1/blob/main/screenshots/game-started.jpg
-[![simon game screenshot][simon-game]](https://github.com/jaxon330/Project-1/blob/main/screenshots/game-over.jpg
+![press-to-start](https://user-images.githubusercontent.com/86989396/142721784-3a52300f-ef64-4b70-8fdf-6817ae1759bf.jpg)
+![game-started](https://user-images.githubusercontent.com/86989396/142721819-9192e825-32c3-4617-9da0-90292efef34c.jpg)
+![game-over](https://user-images.githubusercontent.com/86989396/142721824-c1ac8e78-3100-4ba5-80bb-732f2f5a17a9.jpg)
