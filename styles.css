@@ -20,6 +20,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5em;
     display: none;
+    margin-bottom: 50px;
     
 }
 
@@ -29,11 +30,14 @@ body {
     
 }
 
+
+/* Title and level */
 h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 3em;
     color: burlywood;
 }
+
 
 /* background colors for buttons */
 
@@ -106,3 +110,71 @@ background-color: grey;
         
     }
 }
+
+
+/* Click here to learn about the game */
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    color: burlywood;
+}
+
+
+/* pop-up window  */
+
+
+#modal {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto; 	
+	display: none;
+}
+
+#modal-textbox {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #DBD0C0;
+	height: 450px;
+	width: 600px;
+	border-radius: 2px;
+	margin: 100px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+}
+
+#modal-footer {
+	text-align: center;
+}
+
+
+h3 {
+	padding-bottom: 15px;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+.modal-buttons {
+	color: white;
+	cursor: pointer;
+}
+
+/* Close button for pop-up window */
+#close {
+    font-size: 1.5em;
+    border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	background-color: #011F3F;
+	cursor: pointer;
+}
+

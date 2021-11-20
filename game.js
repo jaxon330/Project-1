@@ -1,4 +1,4 @@
-const buttonColors = ['red', 'blue', 'green', 'yellow']
+const buttonColors = ['red', 'blue', 'green', 'yellow'] 
 let gamePattern = []
 let userClickedPattern = []
 let level = 0;
@@ -11,9 +11,10 @@ $(document).keypress(() => {
         // $('.level').text(`Level ${level}`)
         nextSequence()
         started = true;
+        $('h2').css('display', 'none')
     }
 
-})
+
 
 
 // User clicked pattern
@@ -26,7 +27,8 @@ $('.btn').click((e) => {
     playSound(userChoosenColor)
     //
     checkAnswer(userClickedPattern.length - 1)
-})
+}) 
+   
 
 // game condition
 function checkAnswer(currentLevel) {
@@ -50,7 +52,7 @@ function checkAnswer(currentLevel) {
 function nextSequence() {
     level++;
     $('.level').text(`Level ${level}`)
-    let randomNumber = Math.floor(Math.random() * 3)
+    let randomNumber = Math.floor(Math.random() * 4)
     let randomChoosenColour = buttonColors[randomNumber]
     gamePattern.push(randomChoosenColour)
     gamePattern.forEach((randomChoosenColour, i) => {
@@ -66,8 +68,6 @@ function nextSequence() {
 }
 
 
-
-
 // play sound
 
 function playSound(index) {
@@ -77,7 +77,7 @@ function playSound(index) {
 
 // game over
 function wrongAnswer() {
-    console.log('wrong');
+    // console.log('wrong');
     let audio = new Audio('sounds/error.wav')
     audio.play()
     $('body').addClass('red')
@@ -86,6 +86,7 @@ function wrongAnswer() {
     }, 300)
     $('.restart').addClass('show')
     $('.level').text('Game Over, Press Restart button')
+    $('h2').css('display', 'inline')
 }
 
 // restart button
@@ -94,6 +95,34 @@ $('.restart').click(() => {
     userClickedPattern = []
     level = 0;
     $('.restart').removeClass('show')
+    $('h2').css('display', 'none')
     nextSequence()
 
 })
+
+})
+
+//  pop-up window 
+
+
+const openBtn = $('#openModal')
+
+const modal = $('#modal')
+
+const openModalFunction = () => {
+    modal.style.display = 'block'
+}
+
+const close = $('#close')
+
+openBtn.addEventListener('click', openModalFunction)
+
+$('#openModal').on('click', function() {
+    $('#modal').css('display', 'block');
+})
+
+const closeModalFunction = () => {
+    modal.style.display = 'none'
+  }
+
+close.addEventListener('click', closeModalFunction)
