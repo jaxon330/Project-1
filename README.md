@@ -1,6 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Simon Game
-![press-to-start](https://user-images.githubusercontent.com/86989396/142721784-3a52300f-ef64-4b70-8fdf-6817ae1759bf.jpg)
+![press-to-start](https://user-images.githubusercontent.com/86989396/142721784-3a52300f-ef64-4b70-8fdf-6817ae1759bf.jpg) ![login-page](https://user-images.githubusercontent.com/86989396/149965183-adf3777a-8bed-48fe-a221-1975e623ff15.jpg)
+
 
 ## Introduction
 Simon game is a game of lights and sounds in which player must repeat random sequences of lights by pressing the colored pads in correct order.
