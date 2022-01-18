@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-## Simon Game
+## Simon Game | ## Budget
 ![press-to-start](https://user-images.githubusercontent.com/86989396/142721784-3a52300f-ef64-4b70-8fdf-6817ae1759bf.jpg) | ![login-page](https://user-images.githubusercontent.com/86989396/149965183-adf3777a-8bed-48fe-a221-1975e623ff15.jpg)
 
 
