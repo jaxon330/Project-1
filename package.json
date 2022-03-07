@@ -1,0 +1,23 @@
+{
+  "name": "simon-game",
+  "version": "1.0.0",
+  "description": "Simon game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaxon330/Project-1.git"
+  },
+  "author": "Jakhongir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaxon330/Project-1/issues"
+  },
+  "homepage": "https://github.com/jaxon330/Project-1#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "request": "^2.88.2"
+  }
+}
