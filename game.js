@@ -102,7 +102,6 @@ $('.restart').click(() => {
         nextSequence()
     }, 300)
     
-
 })
 
 })
