@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Simon game",
   "main": "app.js",
-  "start": "node app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jaxon330/Project-1.git"
