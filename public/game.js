@@ -6,7 +6,7 @@ let started = false;
 
 
 // press any key to start the game
-$(document).on('keydown', (e) => {
+$(document).keypress(() => {
     if (started === false) {
         // $('.level').text(`Level ${level}`)
         setTimeout(() => {
